@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+:root {
+  /* colores primarios*/
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream-color: hsl(30, 38%, 92%);
+  /* colores neutrales*/
+  --very-dar-blue: hsl(212, 21%, 14%);
+  /* --dark-grayish-blue: hsl(200, 24%, 86%); */
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white-color: hsl(0, 0%, 100%);
+  /* fuentes */
+  --fraunces-family: "Fraunces", serif;
+  --montserrat-family: "Montserrat", sans-serif;
+  --very-dark-green: hsl(156, 42%, 18%);
+}
+
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cream-color);
+  margin: auto;
+  box-sizing: border-box;
+  font-family: var(--montserrat-family);
+  font-size: 14px;
+}
+/* Mobile */
+.container {
+  /* border: 1px solid black; */
+  width: 344px;
+  height: 612px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 68px auto;
+  background-color: var(--white-color);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container__first-part-image {
+  width: 100%;
+}
+
+.container__second-part__section__product-type {
+  color: var(--dark-grayish-blue);
+  font-size: 1em;
+  letter-spacing: 3px;
+  margin: 18px 24px 8px;
+}
+.container__second-part__section__title {
+  font-family: var(--fraunces-family);
+  margin: 0 24px 16px 24px;
+  font-size: 2.2em;
+  color: var(--very-dar-blue);
+  line-height: 34px;
+}
+
+.container__second-part__section__description {
+  margin: 0 24px 44px 24px;
+  color: var(--dark-grayish-blue);
+  font-size: 0.95em;
+  line-height: 22px;
+}
+
+.container__second-part__section__price {
+  display: flex;
+  gap: 16px;
+  /* border: 1px solid red; */
+  align-items: center;
+  margin: 0 24px 16px 24px;
+}
+
+.container__second-part__section__price__discount {
+  font-family: var(--fraunces-family);
+  font-size: 2.3em;
+  color: var(--dark-cyan);
+}
+
+.container__second-part__section__price__value {
+  text-decoration: line-through;
+  color: var(--dark-grayish-blue);
+}
+
+.container__second-btn {
+  width: 296px;
+  height: 50px;
+  background-color: var(--dark-cyan);
+  border: none;
+  border-radius: 8px;
+  color: var(--white-color);
+  font-size: 1.1em;
+  font-weight: 700;
+  display: block;
+  margin: auto;
+}
+
+.container__second-btn:hover {
+  cursor: pointer;
+  background-color: var(--very-dar-blue);
+}
+
+.container__second-btn__icon {
+  margin-right: 12px;
+}
+
+/* Desktop */
+@media (min-width: 620px) {
+  .container {
+    width: 600px;
+    height: 450px;
+    display: flex;
+    margin: 175px auto 75px;
+  }
+  .container__first-part {
+    width: 300px;
+  }
+  .container__first-part-image {
+    content: url(../img/product-desktop.jpg);
+  }
+  .container__second-part{
+    width: 300px;
+  }
+  .container__second-part__section__product-type{
+    margin: 32px 24px  16px 24px;
+  }
+  .container__second-part__section__description{
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  .container__second-part__section__price{
+    margin-bottom: 26px;
+  }
+  .container__second-btn{
+    width: 240px;
+  }
+}

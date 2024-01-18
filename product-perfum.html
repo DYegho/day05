@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nombre del autor" />
+    <meta name="Perfum Card" content="Project day 05" />
+    <!-- Biblioteca de íconos Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Archivo reset Normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/favicon-32x32.png"
+      type="img/x-icon"
+    />
+    <title>Product Preview Card Component</title>
+  </head>
+
+  <body>
+    <main class="container">
+      <section class="container__first-part">
+        <img
+          src="./img/product-mobile.jpg"
+          alt="Perfume Gabrielle Essence"
+          class="container__first-part-image"
+        />
+      </section>
+      <section class="container__second-part">
+        <p class="container__second-part__section__product-type">PERFUME</p>
+        <h2 class="container__second-part__section__title">Gabrielle Essence Eau De Parfum</h2>
+        <p class="container__second-part__section__description">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="container__second-part__section__price">
+            <p class="container__second-part__section__price__discount">$149.99</p>
+            <p class="container__second-part__section__price__value">$169.99</p>
+        </div>
+        <button class="container__second-btn">
+            <img class="container__second-btn__icon" src="img/icon-cart.svg" alt="Icono agregar a carrito">
+            Add to Cart</button>
+    </main>
+  </body>
+</html>
